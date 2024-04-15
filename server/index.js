@@ -9,8 +9,11 @@ const app = express();
 //middleware fot parsing request body
 app.use(express.json());
 
-//middleware for handling CORS policy
-app.use(cors(
+//middleware for handling CORS policy (Option 1)
+app.use(cors());
+
+//middleware for handling CORS policy (Option 2)
+/*app.use(cors(
   {
     origin: "http://localhost:3000",
     methods: ["GET", "POST", "PUT", "DELETE"],
@@ -18,7 +21,7 @@ app.use(cors(
 
   }
 ))
-
+*/
 
 //get request
 app.get("/", (req, res) => {

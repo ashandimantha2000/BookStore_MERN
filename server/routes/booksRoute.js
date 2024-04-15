@@ -38,7 +38,7 @@ router.get("/", async (req, res) => {
     }
 });
 
-// Route to get a single book from the database
+// Route to get a single book from the database`
 router.get("/:id", async (req, res) => {
     try {
         const id = req.params.id;

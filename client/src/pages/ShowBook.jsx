@@ -53,7 +53,9 @@ function ShowBook() {
               <span>{new Date(book.createdAt).toString()}</span>
             </div>
             <div className="my-4">
-              <span className="text-xl mr-4 text-gray-500">Last Update Time</span>
+              <span className="text-xl mr-4 text-gray-500">
+                Last Update Time
+              </span>
               <span>{new Date(book.updatedAt).toString()}</span>
             </div>
           </div>
